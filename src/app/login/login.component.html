@@ -1,0 +1,36 @@
+<html>
+ 
+ 
+
+ <head>
+ <script type="text/javascript">
+    function validateForm() {
+      alert("hello");
+      console.log("hello");
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+    </script> 
+    </head>
+ <body>
+  
+  
+      <div class="login-card">
+      <form  name="form1" action="#">
+          <input type="email" name="email" placeholder="Enter your Email ID" pattern=".+@meltwater.com" size="30" title="@meltwater.com" required >
+         <input type="password" name="password" placeholder="Enter your Password " size="15" title="Maximum length of the password is 15 characters " required>
+          <input type="submit"  name="login" class="login login-submit" value="login" />
+
+        </form>
+        <!--<form name="myForm" onsubmit="validateForm()" >
+          Name: <input type="text" name="fname">
+          <input type="submit" value="Submit">
+          </form>-->
+      </div>
+     
+  </body>
+</html>
+
