@@ -8,6 +8,8 @@ import { AdminComponent } from './admin/admin.component';
 import { ClientComponent } from './client/client.component';
 import {RouterModule, Routes} from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthService } from './auth.service';
+import { AuthguardGuard } from './authguard.guard';
 
 const appRoutes:Routes = [
   {
@@ -16,6 +18,7 @@ const appRoutes:Routes = [
   },
   {
     path: 'dashboard',
+    canActivate: [AuthguardGuard],
     component: DashboardComponent
   }
 ]
@@ -35,7 +38,7 @@ const appRoutes:Routes = [
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [],
+  providers: [AuthService, AuthguardGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
