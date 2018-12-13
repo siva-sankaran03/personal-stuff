@@ -3,7 +3,7 @@
  
 
  <head>
- <script type="text/javascript">
+ <!--<script type="text/javascript">
     function validateForm() {
       alert("hello");
       console.log("hello");
@@ -13,16 +13,16 @@
     return false;
   }
 }
-    </script> 
+    </script>--> 
     </head>
  <body>
   
   
       <div class="login-card">
-      <form  name="form1" action="#">
+      <form  (submit)="loginUser($event)" >
           <input type="email" name="email" placeholder="Enter your Email ID" pattern=".+@meltwater.com" size="30" title="@meltwater.com" required >
          <input type="password" name="password" placeholder="Enter your Password " size="15" title="Maximum length of the password is 15 characters " required>
-          <input type="submit"  name="login" class="login login-submit" value="login" />
+          <input type="submit"  class="login login-submit" value="submit" />
 
         </form>
         <!--<form name="myForm" onsubmit="validateForm()" >
