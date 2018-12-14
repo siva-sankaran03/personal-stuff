@@ -10,6 +10,8 @@ import {RouterModule, Routes} from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthService } from './auth.service';
 import { AuthguardGuard } from './authguard.guard';
+import { AddclientComponent } from './addclient/addclient.component';
+import { AdduserComponent } from './adduser/adduser.component';
 
 const appRoutes:Routes = [
   {
@@ -20,7 +22,17 @@ const appRoutes:Routes = [
     path: 'dashboard',
     canActivate: [AuthguardGuard],
     component: DashboardComponent
+  },
+  {
+    path:'addclient',
+    component:AddclientComponent
+
+  },
+  {
+    path: 'adduser',
+    component:AdduserComponent
   }
+
 ]
 
 
@@ -30,7 +42,9 @@ const appRoutes:Routes = [
     LoginComponent,
     AdminComponent,
     ClientComponent,
-    DashboardComponent
+    DashboardComponent,
+    AddclientComponent,
+    AdduserComponent
   ],
   imports: [
     BrowserModule,
