@@ -12,11 +12,13 @@ import { AuthService } from './auth.service';
 import { AuthguardGuard } from './authguard.guard';
 import { AddclientComponent } from './addclient/addclient.component';
 import { AdduserComponent } from './adduser/adduser.component';
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes:Routes = [
   {
     path: '',
     component: LoginComponent
+    
   },
   {
     path: 'dashboard',
@@ -24,13 +26,18 @@ const appRoutes:Routes = [
     component: DashboardComponent
   },
   {
-    path:'addclient',
+    path:'dashboard/addclient',
     component:AddclientComponent
 
   },
+  
   {
-    path: 'adduser',
+    path: 'dashboard/adduser',
     component:AdduserComponent
+  },
+   {
+    path: 'admin',
+    component:AdminComponent
   }
 
 ]
@@ -44,7 +51,9 @@ const appRoutes:Routes = [
     ClientComponent,
     DashboardComponent,
     AddclientComponent,
-    AdduserComponent
+    AdduserComponent,
+    HeaderComponent,
+    
   ],
   imports: [
     BrowserModule,

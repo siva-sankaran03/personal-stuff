@@ -1,5 +1,44 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { AuthService } from '../auth.service';
+import { BrowserModule } from '@angular/platform-browser';
+
+import {RouterModule, Routes} from '@angular/router';
+import { AddclientComponent } from '../addclient/addclient.component';
+import { AdduserComponent } from '../adduser/adduser.component';
+
+
+const appRoutes:Routes = [
+
+  {
+    path:'dashboard/addclient',
+    component:AddclientComponent
+
+  },
+  
+  {
+    path: 'dashboard/adduser',
+    component:AdduserComponent
+  }
+
+]
+
+@NgModule({
+  declarations: [
+  
+    DashboardComponent,
+    AddclientComponent,
+    AdduserComponent,
+   
+    
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
+
+  ],
+ 
+})
+
 
 @Component({
  
@@ -18,4 +57,7 @@ export class DashboardComponent implements OnInit {
   }
 
 
+
 }
+
+

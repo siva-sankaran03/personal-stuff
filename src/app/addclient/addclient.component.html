@@ -1,4 +1,33 @@
-<p>
-  addclient works!
-  <router-outlet></router-outlet>
-</p>
+<app-dashboard></app-dashboard>
+<div class="form-style-2">
+    <div class="form-style-2-heading">Provide your information</div>
+    <form action="" method="post">
+        <label for="field5"><span>Client Id<span class="required">*</span></span><input type="text" class="input-field" name="uid" value="" maxlength="8" /></label>
+         
+        <label for="field0"><span>Company Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label for="field0"><span>Country <span class="required">*</span></span></label>
+        <select name="field4" class="select-field">
+        <option value="General Question">Manager</option>
+        <option value="Advertise">Assistant Manager</option>
+        <option value="Partnership">Employee</option></select>
+        <br>
+        
+        <label for="field1"><span>State <span class="required">*</span></span></label>
+        <select name="field4" class="select-field">        <option value="General Question">Manager</option>
+          <option value="Advertise">Assistant Manager</option>
+          <option value="Partnership">Employee</option></select>
+<br>
+          <label for="field3"><span>Entitlement<span class="required">*</span></span></label>
+          <select name="field4" class="select-field">
+          <option value="General Question">Manager</option>
+          <option value="Advertise">Assistant Manager</option>
+          <option value="Partnership">Employee</option>
+        </select>
+       
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+          <label for="field4"><span>Contact Person<span class="required">*</span></span><input type="text" class="input-field" name="uid" value="" maxlength="8" /></label>
+          <label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />-<input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10"  /></label>
+          
+          
+          <label><span> </span><input type="submit" value="Submit" /></label>
+</form>

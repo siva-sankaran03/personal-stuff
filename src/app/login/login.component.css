@@ -88,10 +88,12 @@ background-color: skyblue;
 
 .login-submit {
   /* border: 1px solid #3079ed; */
+  padding: 12px;
+  font-weight: 100;
   border: 0px;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color: skyblue;
+  background-color: #34b7bd;
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
 
