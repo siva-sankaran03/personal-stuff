@@ -3,7 +3,7 @@ import { ActivatedRoute} from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
-
+selector: 'app-addclient',
   templateUrl: './addclient.component.html',
   styleUrls: ['./addclient.component.css']
 })

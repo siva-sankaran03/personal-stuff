@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,Provider,Component } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,12 +7,18 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { ClientComponent } from './client/client.component';
 import {RouterModule, Routes} from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthService } from './auth.service';
 import { AuthguardGuard } from './authguard.guard';
-import { AddclientComponent } from './addclient/addclient.component';
-import { AdduserComponent } from './adduser/adduser.component';
 import { HeaderComponent } from './header/header.component';
+import { ClientlistComponent } from './client/clientlist/clientlist.component';
+import { SearchComponent } from './client/search/search.component';
+import { AddclientComponent} from './admin/addclient/addclient.component';
+import { AdduserComponent} from './admin/adduser/adduser.component';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { ProvidersFeature } from '@angular/core/src/render3';
+import { provideForRootGuard, provideLocationStrategy } from '@angular/router/src/router_module';
 
 const appRoutes:Routes = [
   {
@@ -21,24 +27,29 @@ const appRoutes:Routes = [
     
   },
   {
-    path: 'dashboard',
-    canActivate: [AuthguardGuard],
-    component: DashboardComponent
+    path: 'admin',
+    //canActivate: [AuthguardGuard],
+    component: AdminComponent
   },
   {
-    path:'dashboard/addclient',
+    path:'admin/addclient',
     component:AddclientComponent
 
   },
   
   {
-    path: 'dashboard/adduser',
+    path: 'admin/adduser',
     component:AdduserComponent
   },
-   {
-    path: 'admin',
-    component:AdminComponent
+  {
+    path: 'search',
+    component:SearchComponent
+  },
+  {
+    path: 'clientlist',
+    component:ClientlistComponent
   }
+  
 
 ]
 
@@ -49,10 +60,12 @@ const appRoutes:Routes = [
     LoginComponent,
     AdminComponent,
     ClientComponent,
-    DashboardComponent,
+ 
     AddclientComponent,
     AdduserComponent,
     HeaderComponent,
+    ClientlistComponent,
+    SearchComponent,
     
   ],
   imports: [
@@ -61,7 +74,16 @@ const appRoutes:Routes = [
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [AuthService, AuthguardGuard],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent
+   
+  ],
+  providers: [
+  
+    AuthService, AuthguardGuard
+  ]
+ 
+  
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch((err: any) => console.error(err));

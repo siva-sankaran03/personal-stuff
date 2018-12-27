@@ -13,13 +13,11 @@ export class LoginComponent implements OnInit {
 
   }
 
-  ngOnInit() {
-    
-  
+  ngOnInit() {  
   }
 loginUser(e)
 {
- 
+
 
 
   //e.preventDefaults();
@@ -30,7 +28,7 @@ if(email == 'admin@meltwater.com' && password =='admin')
 {
   this.auth.setUserLoggedIn();
  
-  this.router.navigate(['dashboard']);
+  this.router.navigate(['admin']);
 }
 else{
   alert("Wrong username and password");

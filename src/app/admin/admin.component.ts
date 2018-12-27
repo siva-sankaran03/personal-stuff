@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MyserviceService } from '../myservice.service';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,16 +10,20 @@ import { Router } from '@angular/router';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private _myservice: MyserviceService) { }
 
+  viewuser()
+  {
+    this.router.navigate(['adduser']);
+  }
   onclick(): void
   {
     
-    this.router.navigate(['/addclient']);
+    this.router.navigate(['addclient']);
   }
   onclick1(): void
   {
-this.router.navigate(['/adduser']);
+this.router.navigate(['adduser']);
   }
 
   ngOnInit() {
