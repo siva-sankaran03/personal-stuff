@@ -141,31 +141,38 @@ const appRoutes:Routes = [
   {
     path: 'admin',
     //canActivate: [AuthguardGuard],
-    component: AdminComponent
+    component: AdminComponent,
+  children: [
+    {
+      path:'addclient',
+      component:AddclientComponent
+  
+    },
+    
+    {
+      path: 'adduser',
+      component:AdduserComponent
+    }
+  ]
   },
-  {
-    path:'admin/addclient',
-    component:AddclientComponent
-
-  },
+ 
   
   {
-    path: 'admin/adduser',
-    component:AdduserComponent
-  },
-  {
-    path: 'search',
-    component:SearchComponent
-  },
-  {
-    path: 'client/clientlist',
-    component:ClientlistComponent
-  },
-  {
     path: 'client',
-    component:ClientComponent
+    component:ClientComponent,
+    children: [
+      {
+        path: 'search',
+        component:SearchComponent
+      },
+      {
+        path: 'clientlist',
+        component:ClientlistComponent
+      }
+    ]
+ 
   },
-  { path: 'client/search', component:SearchComponent}
+
 
 ]
 

@@ -48,6 +48,18 @@
     background-color: #607d8b;
     border-radius: 2px;
   }
+  .font{
+    color: #CFD8DC;
+    size: 12px;
+  }
+  .navbar {
+    background-color:skyblue;
+    border-color: #E7E7E7;
+}
+  .right
+  {
+    text-align: right;
+  }
   .module:hover {
     background-color: #eee;
     cursor: pointer;
