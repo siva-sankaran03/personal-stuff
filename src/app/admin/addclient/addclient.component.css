@@ -1,6 +1,6 @@
 
 .form-style-2{
-	max-width: 700px;
+	max-width: 1000px;
 	padding: 20px 12px 10px 20px;
 	font: 13px Arial, Helvetica, sans-serif;
 	margin-left: 400px;
@@ -10,7 +10,10 @@
 }
 .form2 {
 	max-width:1000px;
-	line-height: 50px
+	line-height: 50px;
+	padding: 10px;
+	margin-left: 150px;
+
 }
 .form-style-2-heading{
 	
@@ -46,7 +49,6 @@
 .form-style-2 .textarea-field, 
  .form-style-2 .select-field{
 	box-sizing: border-box;
-	height: 20px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	border: 1px solid #C2C2C2;
