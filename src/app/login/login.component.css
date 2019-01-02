@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
 
 body {
-background-color: skyblue;
+  background-image: url("../../assets/image/webback.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,8 +12,9 @@ background-color: skyblue;
 .login-card {
 
   padding: 125px;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+
+  height: cover;
   background-color: #F7F7F7;
   margin: 0 auto 10px;
   border-radius: 2px;
@@ -28,7 +29,7 @@ background-color: skyblue;
 }
 
 .login-card input[type=submit] {
-  width: 100%;
+  width: 250px;
   margin-top: 50px;
   margin-bottom: 30cm;
   display: block;
@@ -37,8 +38,9 @@ background-color: skyblue;
 }
 .login-card input[type=password] {
     height: 44px;
+   
     font-size: 16px;
-    width: 100%;
+    width: 300px;
     margin-bottom: 10px;
     -webkit-appearance: none;
     background: #fff;
@@ -49,12 +51,37 @@ background-color: skyblue;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
   }
+  .center
+  {
+    text-align: center;
+  }
+  .auth {
+    display: flex;
+    flex-direction: column;
+  }
+  .auth > * {
+    width: 200%;
+    margin-top: 25px;
+  }
+  .container {
+    padding: 50px;
+    border-radius:500px;
+  font-size: 20px
+  }
+  .md-button{
+    margin-top: 20px;
+    background-color:#34b7bd;
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+  }
   
 
 .login-card input[type=email] {
   height: 44px;
   font-size: 16px;
-  width: 100%;
+
+  width: 300px;
   margin-bottom: 10px;
   -webkit-appearance: none;
   background: #fff;

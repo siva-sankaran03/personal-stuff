@@ -1,4 +1,9 @@
 <app-admin></app-admin>
+<title>
+  Add user
+</title>
+
+
 <!-- <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
@@ -7,7 +12,7 @@
 <script
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     
-<div class="form-style-2">
+<!-- <div class="form-style-2">
     <div class="form-style-2-heading">Provide your information</div>
     <form action="" method="post">
         <label for="field0"><span>First Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
@@ -27,4 +32,141 @@
     
     <label><span> </span><input type="submit" value="Submit" /></label>
     </form>
-    </div>
+    </div> --> 
+    <h2>
+      User Registration
+    </h2>
+    <form class="needs-validation" novalidate>
+            <div class="form2">
+              <div class="form-row">
+                
+                  <div class="col-md-4 mb-3">
+                      <label for="validationCustom01">First name</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Siva" required>
+                      
+                     
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationCustom01">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="lastname" value="sankaran" required>
+                        
+                       
+                      </div>
+                      
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">Username</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Username" value="Siva-03" required>
+                  
+                 
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">Company Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="companyname" value="meltwater" required>
+                    
+                   
+                  </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom02">Email</label>
+                  <input type="email" class="form-control" id="validationCustom02" placeholder="Email" value="siva@meltwater.com" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+             
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustomUsername">User ID</label>
+                 
+                    <div class="input-group-prepend">
+                     
+                    </div>
+                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="userid" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                     
+                  
+                  </div>
+                </div>
+                <div class="col-md-4 mb-6 xs-12">
+                  <label for="validationCustomUsername">Country</label>
+                  <div class="select-group">
+                    <div class="input-group-prepend">
+                    </div>
+                    <select name="field4" style=" height:35px;" class="form-control" placeholder="Select Country" aria-describedby="inputGroupPrepend" required>
+                        <option value="">United State of America</option>
+                        <option value="">Europe</option>
+                        <option value="">India</option></select>
+                <div class="invalid-feedback">
+                      Please choose a Country.
+                    </div>
+                  </div>
+                </div>
+            
+             
+              <div class="col-md-4 mb-3">
+                  <label for="validationCustom05">Designation</label>
+                 
+                  <input type="text" class="form-control" id="validationCustom05" placeholder="Designation" required>
+                  <div class="invalid-feedback">
+                   
+                  </div>
+                </div>
+                          <div class="col-md-4 mb-3">
+                  <label for="validationCustom03">Client ID</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="Clientid" required>
+                  <div class="invalid-feedback">
+                    Enter a valid Client ID
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom04">Contact Info</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="Contact Info" required>
+                  <div class="invalid-feedback">
+                    Please provide valid contact Number
+                  </div>
+                </div>
+                
+                    <!-- <div class="col-md-4 mb-3">
+                        <label for="validationCustom04">//need to filled</label>
+                        <input type="text" class="form-control" id="validationCustom04" placeholder="Contact Info" required>
+                        <div class="invalid-feedback">
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                          <label for="validationCustom04">//need to filled</label>
+                          <input type="text" class="form-control" id="validationCustom04" placeholder="Contact Info" required>
+                          <div class="invalid-feedback">
+                            
+                          </div>
+                        </div> -->
+            
+              </div>
+            </div>
+            <br>
+            
+            <div class="center">
+              <button class="btn btn-primary" type="submit">Submit</button>
+              &nbsp;
+              <button class="btn btn-primary" type="Cancel">Cancel</button>
+            </div>
+            </form>
+            
+            <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>

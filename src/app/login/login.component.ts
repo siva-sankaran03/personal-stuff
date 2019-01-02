@@ -30,6 +30,10 @@ if(email == 'admin@meltwater.com' && password =='admin')
  
   this.router.navigate(['admin']);
 }
+else if (email == 'client@meltwater.com' && password == 'client') {
+  this.auth.setUserLoggedIn();
+  this.router.navigate(['client']);
+} 
 else{
   alert("Wrong username and password");
 }
