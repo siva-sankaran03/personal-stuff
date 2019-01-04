@@ -1,6 +1,7 @@
 const express = require('express');
-const bodyparser = require('body-parser');
+const bodyParser = require('body-parser');
 const { mongoose } = require('./db.js');
+var logincontroller = require('./controllers/logincontroller');
 var app = express();
-app.use(bodyparser.json());
 app.listen(3000, () => console.log('server started at port : 3000'));
+app.use('/login',logincontroller);
