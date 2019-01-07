@@ -16,7 +16,7 @@ router.get('/',(req, res) => {
 router.post('/', (req, res)=>
 {
     var log = new login({
-        name: req.body.name,
+        email: req.body.email,
         password: req.body.password,
     });
 log.save((err, doc) => {

@@ -18,14 +18,14 @@
  <body>
   
   
-      <div class="login-card col-mb-4 center">
+      <div class="login-card col-mb-8 xs-1">
           
       <form  (submit)="loginUser($event)" method="POST" action="/post-login" >
-         <input type="email" name="email"   ng-pattern="/^['a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/"  size="30" title="@meltwater.com" placeholder="Email*"required >
-         <input type="password" name="password" placeholder="Password* " size="10" title="Maximum length of the password is 15 characters " required>
-       
-         <input type="submit"  class="login login-submit" value="LOGIN" />
-      
+         <input type="email" class="form-control" name="email"   ng-pattern="/^['a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/"  size="30" title="@meltwater.com" placeholder="Email*"required >
+         <input type="password" class="form-control" name="password" placeholder="Password* " size="10" title="Maximum length of the password is 15 characters " required>
+       <div class="col-mb-6 xs-4 md-4 center">
+         <input type="submit"  class="btn btn-outline-primary" value="LOGIN" />
+        </div>
           <a href="#" class="login-help" tabindex="0">Forgot password?</a>
 
         </form>

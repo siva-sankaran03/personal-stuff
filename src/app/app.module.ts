@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,Provider,Component } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -140,7 +140,7 @@ const appRoutes:Routes = [
   },
   {
     path: 'admin',
-    //canActivate: [AuthguardGuard],
+    canActivate: [AuthguardGuard],
     component: AdminComponent,
   children: [
     {
@@ -196,6 +196,7 @@ const appRoutes:Routes = [
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
+    FormsModule,
 
     AppRoutingModule,
     MatIconModule,
