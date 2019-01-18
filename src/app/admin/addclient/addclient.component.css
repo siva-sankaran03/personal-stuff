@@ -10,9 +10,30 @@
 }
 .form2 {
 	max-width:1000px;
-	line-height: 50px;
-	padding: 10px;
-	margin-left: 150px;
+	
+	line-height: 30px;
+	padding: 30px;
+
+	margin-left:auto;
+	margin-right: auto;
+	background-image: url(../../../assets/image/bgwhite.jpg);
+	border-radius: 15px;
+
+
+}
+body { 
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
+.btn {
+	background-color: #28BBBB;
+}
+.navbar{
+	width:200px;
+	background-color: #28BBBB;
 
 }
 .form-style-2-heading{

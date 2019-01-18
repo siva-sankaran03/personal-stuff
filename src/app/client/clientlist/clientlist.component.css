@@ -9,11 +9,28 @@
 	font-family: 'Times New Roman', Times, serif
 }
 .form2 {
-	max-width:1000px;
-	line-height: 50px;
+	max-width:auto;
+	line-height: 30px;
 	padding: 10px;
-	margin-left: 150px;
+	align-self: auto;
+	align-content: center;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
 
+
+}
+
+.navbar{
+	width:200px;
+	background-color: #28BBBB;
+
+}
+.btn {
+	max-width:auto;
+	text-align: center;
+	margin-right: auto;
+	background-color: #28BBBB;
 }
 .form-style-2-heading{
 	

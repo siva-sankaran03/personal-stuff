@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MyserviceService } from '../myservice.service';
+
 
 import { Router } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AdminComponent implements OnInit {
 
-  constructor(private router:Router, private _myservice: MyserviceService) { }
+  constructor(private router:Router) { }
 
   viewuser()
   {

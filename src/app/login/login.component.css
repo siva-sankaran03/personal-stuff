@@ -8,13 +8,19 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
+  vertical-align: center;
 }
+.btn{
+  text-align: center;
+  width: 70%;
 
+}
 .login-card {
 
-  padding: 125px;
+  padding: 100px;
   width: 500px;
-margin-left: -100px;
+  height:500px;
+text-align: center;
   height: cover;
   background-color: #F7F7F7;
   margin: 0 auto ;
@@ -30,28 +36,24 @@ margin-left: -100px;
 }
 
 .login-card input[type=submit] {
-  width: 250px;
+  width: aut;
   margin-top: 50px;
   margin-bottom: 30cm;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
   position: relative;
 }
 .login-card input[type=password] {
-    height: 44px;
-   text-align: left;
-    font-size: 16px;
-    width: 300px;
-    margin-bottom: 10px;
-    -webkit-appearance: none;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-top: 1px solid #c0c0c0;
-    /* border-radius: 2px; */
-    padding: 0 8px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-  }
+  width: aut;
+  margin-top: 20px;
+  margin-bottom: 30cm;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  position: relative;}
   .center
   {
     text-align: center;

@@ -1,4 +1,11 @@
-.navbar {
-    background-color:skyblue;
-    border-color: #E7E7E7;
+.navbar-custom{
+	
+background-color:skyblue;
 }
+body { 
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }

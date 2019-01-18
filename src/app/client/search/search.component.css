@@ -8,11 +8,21 @@
 	font-weight: normal;
 	font-family: 'Times New Roman', Times, serif
 }
+
+.navbar{
+	width:200px;
+	background-color:#28BBBB;
+
+}
+.btn {
+	background-color: #28BBBB;
+}
 .form2 {
-	max-width:1000px;
-	line-height: 50px;
-    padding: 10px;
-    margin-left:300px;
+	max-width:auto;
+	line-height: 30px;
+	padding: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
 
 }
 .form-style-2-heading{

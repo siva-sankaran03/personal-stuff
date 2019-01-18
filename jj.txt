@@ -1,0 +1,24 @@
+on select client add oppurtunity id remove country, contact person  make dropdown 
+select search - typing - search by name and Id .
+push url - client needs a push url or not
+Add Client - 
+no step approach - make it in a single screen
+create a live host in netfire
+usecases
+
+
+User Interface - angular
+Backend - node js, Express js
+DataBase- Mongodb
+ The application user interface is coded with Angular project were login and add user and client forms are generated.
+On click on submit the given data is undergone certain validation and saved in the database.
+
+Inorder to estabhlish the connection between the UI and the mongo database Nodejs and ExpressJs is utillized to create a server
+which post the given data in the Mongodb.
+
+Schema is coded inorder to perform CRUD operation in the database with the help of nodejs.
+
+Once the connectivity part is done then the API hook is created to fetch the search result from the Meltwater API 
+and customize it based on the user requirement and display via hook API.
+
+
